@@ -88,10 +88,10 @@ ORDER BY total_quantity DESC;
 ![Revenue](/workspaces/restaurant-sales-sql-analysis/screenshots/Total_revenue.png)
 
 ### Top Selling Items
-![Top Items](/workspaces/restaurant-sales-sql-analysis/screenshots/Top Selling Menu Items.png)
+![Top Items](/workspaces/restaurant-sales-sql-analysis/screenshots/Top_Selling_Menu_Items.png)
 
 ### Customer Spending Analysis
-![Customer Spending](/workspaces/restaurant-sales-sql-analysis/screenshots/Customer Spending Analysis.png)
+![Customer Spending](/workspaces/restaurant-sales-sql-analysis/screenshots/Customer_Spending_Analysis.png)
 
 ## Future Improvements
 

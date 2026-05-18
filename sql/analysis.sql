@@ -1,6 +1,8 @@
+#total_revenue
 SELECT SUM(total_amount) AS total_revenue
 FROM orders;
 
+#total_orders
 SELECT COUNT(*) AS total_orders
 FROM orders;
 
@@ -62,3 +64,29 @@ FROM (
     ON c.customer_id = o.customer_id
     GROUP BY c.customer_name
 ) ranked_customers;
+
+SELECT
+    c.customer_name,
+    SUM(o.total_amount) AS total_spent
+FROM customers c
+JOIN orders o
+ON c.customer_id = o.customer_id
+GROUP BY c.customer_name
+ORDER BY total_spent DESC
+LIMIT 1;
+
+SELECT
+    m.category,
+    SUM(oi.quantity) AS total_orders
+FROM menu m
+JOIN order_items oi
+ON m.item_id = oi.item_id
+GROUP BY m.category
+ORDER BY total_orders DESC;
+
+SELECT
+    order_date,
+    SUM(total_amount) AS daily_revenue
+FROM orders
+GROUP BY order_date
+ORDER BY order_date;

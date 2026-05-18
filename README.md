@@ -82,6 +82,17 @@ ON oi.item_id = m.item_id
 GROUP BY m.item_name
 ORDER BY total_quantity DESC;
 ```
+## Project Output Screenshots
+
+### Total Revenue Analysis
+![Revenue](/workspaces/restaurant-sales-sql-analysis/README.md
+/workspaces/restaurant-sales-sql-analysis/screenshots/Total_revenue.png)
+
+### Top Selling Items
+![Top Items](s/workspaces/restaurant-sales-sql-analysis/screenshots/Top Selling Menu Items.png)
+
+### Customer Spending Analysis
+![Customer Spending](/workspaces/restaurant-sales-sql-analysis/screenshots/Customer Spending Analysis.png)
 
 ## Future Improvements
 
